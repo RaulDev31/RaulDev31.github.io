@@ -1,0 +1,172 @@
+/* ESTILO GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Fira Code', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(#5c3e79, #7c5e99);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header a {
+    display: inline-block;
+    color: #747272;
+    text-decoration: none;
+
+}
+
+header a:hover {
+    color: #FFF;
+    transform: scale(1.07);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #000;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: #FFF;
+    font-size: 38px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #FFF;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 30px;
+    border: 2px solid #00ff08;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    pad: 40px 4%;
+}
+
+h2.titulo {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+}
+
+.sobre .box-sobre {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 50%;
+    height: 450px;
+    background-image: linear-gradient(#00ff08, #006203);
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px;
+    transition: 2s;
+}
+
+.sobre .box-sobre:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px#000000ef;
+}
+
+.sobre .box-sobre h3 {
+    margin-top: 30px;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+
+}
+
+.sobre .box-sobre p {
+    color: #FFF;
+    margin: 20px;
+    text-align: justify;
+}
