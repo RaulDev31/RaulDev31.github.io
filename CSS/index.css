@@ -103,15 +103,6 @@ section.topo-do-site .flex {
     margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site img {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-    max-width: 450px;
-    max-height: 450px;
-    border-radius: 30px;
-    border: 2px solid #00ff08;
-}
-
 @keyframes flutuar {
     0% {
         top: 0%;
@@ -120,6 +111,15 @@ section.topo-do-site .flex {
     100% {
         top: 30px;
     }
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 30px;
+    border: 2px solid #00ff08;
 }
 
 /* ESTILO SOBRE */
@@ -170,3 +170,35 @@ h2.titulo {
     margin: 20px;
     text-align: justify;
 }
+
+/* Estilos Relatos */
+
+section.relatos {
+    padding: 40px 4%;
+}
+
+section.relatos .flex {
+    align-items: center;
+    gap: 60px
+}
+
+section.relatos .img-relatos img {
+    padding-top: 50px;
+    border-radius: 50%;
+    border: 1px solid #00ff08;
+}
+
+
+.relatos .txt-relatos {
+    color: #FFF;
+
+}
+
+.txt-relatos-tlt h2 {
+    color: #FFF;
+    font-size: 28px;
+    text-align: center;
+    justify-self: center;
+}
+
+.txt-relatos {}
