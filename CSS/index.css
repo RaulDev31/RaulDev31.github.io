@@ -182,23 +182,41 @@ section.relatos .flex {
     gap: 60px
 }
 
-section.relatos .img-relatos img {
-    padding-top: 50px;
-    border-radius: 50%;
+section.relatos .img-relatos .img-1 {
+    position: relative;
+    top: 150px;
+    left: 25%;
+    width: 200px;
+    border-radius: 30px;
     border: 1px solid #00ff08;
 }
 
 
-.relatos .txt-relatos {
+.relatos .txt-relatos-tlt {
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
     color: #FFF;
-
+    font-size: 28px;
+    justify-content: center;
+    text-align: center;
+    margin: inherit;
 }
 
-.txt-relatos-tlt h2 {
-    color: #FFF;
+.flex.txt-relatos-tlt h2 {
     font-size: 28px;
     text-align: center;
     justify-self: center;
 }
 
-.txt-relatos {}
+.flex .txt-relatos {
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 310px;
+    text-align: center;
+    max-width: 500px;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 0 30px 30px 30px;
+}
