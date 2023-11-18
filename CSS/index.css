@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(#5c3e79, #7c5e99);
+    background-color: #000;
     height: 100vh;
 }
 
@@ -175,16 +175,24 @@ h2.titulo {
 
 section.relatos {
     padding: 40px 4%;
+    height: 700px;
 }
 
-.txt-relatos-tlt h2 {
-    color: #fff;
+.interface .txt-relatos-tlt {
+    display: block;
+    color: #FFF;
     text-align: center;
-    margin-top: 10px;
 }
 
-.interface .grid-1-3 {
-    display: inline-block;
+.grid-fotos {
+    margin-top: 30px;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.flex-box .grid-1-3 {
     background: rgba(0, 255, 8, 0.28);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -192,26 +200,38 @@ section.relatos {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 255, 8, 0.58);
     height: 510px;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 700px;
+    margin-top: 70px;
+    margin: 10px;
     text-align: center;
 }
 
-li .relatos-img {
+.grid-1-3 .relatos-img {
+    margin-top: 30px;
+    border-radius: 500px;
+    padding: 10px;
+    width: 200px;
+}
+
+.relatos-img-2 {
     border-radius: 500px;
     width: 200px;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-left: 30px;
+}
+
+.relatos-img-3 {
+    padding: 10px;
+    border-radius: 500px;
+    width: 200px;
+    margin-top: 40px;
 }
 
 .grid-1-3 h3 {
-    align-items: center;
-    margin-top: 10px;
     color: #FFF;
+    text-align: center;
 }
 
 .grid-1-3 p {
-    color: #000;
-    text-align: center;
+    margin-top: 20px;
 }
