@@ -178,6 +178,10 @@ section.relatos {
     height: 700px;
 }
 
+.relatos span {
+    color: #00ff08
+}
+
 .interface .txt-relatos-tlt {
     display: block;
     color: #FFF;
@@ -234,4 +238,73 @@ section.relatos {
 
 .grid-1-3 p {
     margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    /* classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* cabeçalho */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* topo do site */
+    .flex,
+    .topo-do-site {
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site,
+    .img-topo-site {
+        section.topo-do-site {
+            padding: 20px 8%;
+        }
+    }
+
+    .topo-do-site .img-topo-site img {
+        max-width: 360px;
+    }
+
+    /* estilo sobre */
+    .sobre .box-sobre {
+        width: 95%;
+
+    }
+
+    .sobre .box-sobre p {
+        color: #FFF;
+        margin: 20px;
+        text-align: justify;
+        max-height: 10px;
+        margin-top: 5px;
+    }
+
+    /* estilos relatos */
+
+    section.relatos {
+        padding: px 8%;
+        height: 700px;
+    }
+
+    .flex-box {
+        flex-direction: column;
+
+    }
+
+    .flex-box .grid-1-3 {
+        width: 350px;
+        margin-right: 100px;
+        margin-top: 70px;
+        margin: 10px 0;
+    }
+
+    .grid-1-3 p {
+        margin-top: 10px;
+    }
 }
